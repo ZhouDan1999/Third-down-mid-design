@@ -1,0 +1,247 @@
+<!DOCTYPE html><html><head><title>我的首页</title><meta charset="UTF-8"><meta http-equiv="x-ua-compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/forum.css" rel="stylesheet" type="text/css"/><!--[if lt IE 9]><script src="lib/html5shiv/html5shiv.min.js"></script><script src="lib/respond/respond.min.js"></script><![endif]--></head><body >
+	<!-- nav begin -->
+	<nav class="navbar navbar-default" role="navigation">
+	    <div class="navbar-header">
+	        <a class="navbar-brand" href="enter.html">📕 书籍网</a>
+	        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	        </button>
+	    </div>
+	
+	    <!-- 页面大屏-->
+	    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+	        <ul class="nav navbar-nav">
+	            <li><a href="index.html">首页</a></li>
+				<li class="dropdown">
+				    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+				        排行榜<b class="caret"></b>
+				    </a>
+				    <ul class="dropdown-menu">
+				        <li><a href="ranking.html">教育</a></li>
+				        <li class="divider"></li>
+				        <li><a href="ranking.html">生活</a></li>
+				        <li class="divider"></li>
+				        <li><a href="ranking.html">购物</a></li>
+				    </ul>
+				</li>
+	            <li><a href="forum.html">论坛</a></li>	            
+	        </ul>
+	    </div>
+	</nav>	<!-- nav end -->
+	<div class="container">
+		<div class="page-header">
+		  <h1>即刻评论<small> 发表您的评论</small></h1>
+		</div>
+		<div class="row">
+			<div class="col-12 top-box" >
+					
+				<div class="input-group">  
+				<div class="btn-group right-box">
+				  <button id="comment" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+				    龟壳书 <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu">
+				    <li><a href="javascript:void(0);" onclick="ChangeComment(this)">龟壳书</a></li>
+				    <li><a href="javascript:void(0);" onclick="ChangeComment(this)">青铜书</a></li>
+				    <li><a href="javascript:void(0);" onclick="ChangeComment(this)">竹简</a></li>
+					<li><a href="javascript:void(0);" onclick="ChangeComment(this)">帛书</a></li>
+				    <li><a href="javascript:void(0);" onclick="ChangeComment(this)">纸书</a></li>
+				  </ul>
+				</div>
+				  <input type="text" class="form-control comment" id="content" placeholder="输入你的评论吧!" aria-describedby="basic-addon1">
+					
+					<button type="button" class="btn btn-default" onclick="deliver()">发表</button>
+				</div>
+			</div>
+		</div>
+		<div class="page-header">
+		  <h1>回顾<small> 展示您与他人的评论</small></h1>
+		</div>
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="jumbotron">
+				  <h3>龟壳书</h3>
+				  <p>我国的第一种书，是龟壳“书”。在3000多年的商朝，人们发明了甲骨文，这种文字刻在龟背上。因此，我国的有文字时代就从这里开始，同时，龟背也成我国第一种“书”了。</p>
+				  <p><a class="btn btn-primary btn-lg" href="www." role="button">了解更多</a></p>
+				</div>
+				<div class="bs-example bs-example-tabs forum-tab" data-example-id="togglable-tabs">
+					<ul id="myTabs" class="nav nav-tabs" role="tablist">
+					  <li role="presentation" class=""><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="false">图片欣赏</a></li>
+					  <li role="presentation" class="active"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="true">网友评论</a>
+					  </li></ul>
+					<div id="myTabContent" class="tab-content">
+					  <div role="tabpanel" class="tab-pane fade" id="home" aria-labelledby="home-tab">
+						<img src="images/s1.JPG" />
+					  </div>
+					  <div  role="tabpanel" class="tab-pane fade active in" id="profile" aria-labelledby="profile-tab">
+						<div class="list-group" id="turtle">
+						  <a href="#" class="list-group-item list-group-item-info">
+						    <h4 class="list-group-item-heading">龟壳书好久远呀</h4>
+						    <p class="list-group-item-text">——小张</p>
+						  </a>
+						  <a href="#" class="list-group-item list-group-item-info">
+						    <h4 class="list-group-item-heading">龟壳书看到了以后就仿佛回到了古代</h4>
+						    <p class="list-group-item-text">——小周</p>
+						  </a>
+						  <a href="#" class="list-group-item list-group-item-info">
+						    <h4 class="list-group-item-heading">龟壳书好漂亮呀！</h4>
+						    <p class="list-group-item-text">——小陈</p>
+						  </a>
+						</div>
+					  </div>
+					  <div role="tabpanel" class="tab-pane fade" id="dropdown1" aria-labelledby="dropdown1-tab">
+						<p></p>
+					  </div>
+					  <div role="tabpanel" class="tab-pane fade" id="dropdown2" aria-labelledby="dropdown2-tab">
+						<p></p>
+					  </div>
+					</div>
+				  </div>
+				<div class="jumbotron">
+					  <h3>青铜书</h3>
+					  <p>我国的第二种书，是青铜“书”。刻在青铜“书”上的文字是金文，又叫钟鼎文。</p>
+					  <p><a class="btn btn-primary btn-lg" href="www." role="button">了解更多</a></p>
+					</div>
+				<div class="bs-example bs-example-tabs forum-tab" data-example-id="togglable-tabs">
+					<ul id="myTabs" class="nav nav-tabs" role="tablist">
+					  <li role="presentation" class=""><a href="#home2" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="false">图片欣赏</a></li>
+					  <li role="presentation" class="active"><a href="#profile2" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="true">网友评论</a>
+					  </li></ul>
+					<div id="myTabContent" class="tab-content">
+					  <div role="tabpanel" class="tab-pane fade" id="home2" aria-labelledby="home-tab">
+						<img src="images/s2.JPG" />
+					  </div>
+					  <div role="tabpanel" class="tab-pane fade active in" id="profile2" aria-labelledby="profile-tab">
+						<div class="list-group" id="green">
+						  <a href="#" class="list-group-item list-group-item-info">
+						    <h4 class="list-group-item-heading">青铜书好酷炫呀！</h4>
+						    <p class="list-group-item-text">——小张</p>
+						  </a>
+						  <a href="#" class="list-group-item list-group-item-info">
+						    <h4 class="list-group-item-heading">看到了青铜书以后就仿佛回到了古代。</h4>
+						    <p class="list-group-item-text">——小周</p>
+						  </a>
+						  <a href="#" class="list-group-item list-group-item-info">
+						    <h4 class="list-group-item-heading">青铜书真漂亮呀！</h4>
+						    <p class="list-group-item-text">——小陈</p>
+						  </a>
+						</div>
+					  </div>
+					  <div role="tabpanel" class="tab-pane fade" id="dropdown1" aria-labelledby="dropdown1-tab">
+						<p></p>
+					  </div>
+					  <div role="tabpanel" class="tab-pane fade" id="dropdown2" aria-labelledby="dropdown2-tab">
+						<p></p>
+					  </div>
+					</div>
+				  </div>
+				<div class="jumbotron">
+						  <h3>竹简</h3>
+						  <p>我国的第三种书，是竹简。这种书的制作方法是：用麻绳、丝绳或皮条串编一根根竹条或木条。</p>
+						  <p><a class="btn btn-primary btn-lg" href="www." role="button">了解更多</a></p>
+					</div>
+				<div class="bs-example bs-example-tabs forum-tab" data-example-id="togglable-tabs">
+					<ul id="myTabs" class="nav nav-tabs" role="tablist">
+					  <li role="presentation" class=""><a href="#home1" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="false">图片欣赏</a></li>
+					  <li role="presentation" class="active"><a href="#profile1" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="true">网友评论</a>
+					  </li></ul>
+					<div id="myTabContent" class="tab-content">
+					  <div role="tabpanel" class="tab-pane fade" id="home1" aria-labelledby="home-tab">
+						<img src="images/s3.JPG" />
+					  </div>
+					  <div role="tabpanel" class="tab-pane fade active in" id="profile1" aria-labelledby="profile-tab">
+						<div class="list-group" id="bamboo">
+						  <a href="#" class="list-group-item list-group-item-info">
+						    <h4 class="list-group-item-heading">我好像见过竹简！</h4>
+						    <p class="list-group-item-text">——小张</p>
+						  </a>
+						  <a href="#" class="list-group-item list-group-item-info">
+						    <h4 class="list-group-item-heading">楼上是真的吗？好厉害！</h4>
+						    <p class="list-group-item-text">——小周</p>
+						  </a>
+						  <a href="#" class="list-group-item list-group-item-info">
+						    <h4 class="list-group-item-heading">哇，我也想看见竹简。</h4>
+						    <p class="list-group-item-text">——小陈</p>
+						  </a>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			<div class="col-lg-6">
+				<div class="jumbotron">
+					  <h3>帛书</h3>
+					  <p>我国的第四种书，是帛书。将文字写在绸子上面，一部书就是一卷绸子。</p>
+					  <p><a class="btn btn-primary btn-lg" href="www." role="button">了解更多</a></p>
+				</div>
+				<div class="bs-example bs-example-tabs forum-tab" data-example-id="togglable-tabs">
+					<ul id="myTabs" class="nav nav-tabs" role="tablist">
+					  <li role="presentation" class="active"><a href="#home3" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="false">图片欣赏</a></li>
+					  <li role="presentation" class=""><a href="#profile3" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="true">网友评论</a>
+					  </li></ul>
+					<div id="myTabContent" class="tab-content">
+					  <div role="tabpanel" class="tab-pane fade active in" id="home3" aria-labelledby="home-tab">
+						<img src="images/s4.JPG" />
+					  </div>
+					  <div role="tabpanel" class="tab-pane fade " id="profile3" aria-labelledby="profile-tab">
+						<div class="list-group" id="unthick">
+						  <a href="#" class="list-group-item list-group-item-info">
+						    <h4 class="list-group-item-heading">帛书好久远呀！</h4>
+						    <p class="list-group-item-text">——小张</p>
+						  </a>
+						  <a href="#" class="list-group-item list-group-item-info">
+						    <h4 class="list-group-item-heading">感觉帛书真的很薄！哈哈！</h4>
+						    <p class="list-group-item-text">——小周</p>
+						  </a>
+						  <a href="#" class="list-group-item list-group-item-info">
+						    <h4 class="list-group-item-heading">赞同楼上。</h4>
+						    <p class="list-group-item-text">——小陈</p>
+						  </a>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				
+				<div class="jumbotron">
+					  <h3>纸书</h3>
+					  <p>第五种书，就是现在经常见到的书——用纸做成的书。公元前12年，纸就出现了。当时造出来的纸，质量很差。蔡伦发明的造纸术，使纸的质量大大提高。这时的书还是用手抄的。唐朝时期，书是利用雕版印刷术印刷出来的。到了宋朝，书是利用毕升发明的活字印刷术印刷出来的。到了现代，书就是用电脑备份，然后用打印机打印出来。</p>
+					  <p><a class="btn btn-primary btn-lg" href="www." role="button">了解更多</a></p>
+				</div>
+				<div class="bs-example bs-example-tabs forum-tab" data-example-id="togglable-tabs">
+					<ul id="myTabs" class="nav nav-tabs" role="tablist">
+					  <li role="presentation" class=""><a href="#home4" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="false">图片欣赏</a></li>
+					  <li role="presentation" class="active"><a href="#profile4" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="true">网友评论</a>
+					  </li></ul>
+					<div id="myTabContent" class="tab-content">
+					  <div role="tabpanel" class="tab-pane fade" id="home4" aria-labelledby="home-tab">
+						<img src="images/s5.JPG" />
+					  </div>
+					  <div role="tabpanel" class="tab-pane fade active in" id="profile4" aria-labelledby="profile-tab">
+						<div class="list-group" id="paper">
+						  <a href="#" class="list-group-item list-group-item-info">
+						    <h4 class="list-group-item-heading">还是现代的书方便。</h4>
+						    <p class="list-group-item-text">——小张</p>
+						  </a>
+						  <a href="#" class="list-group-item list-group-item-info">
+						    <h4 class="list-group-item-heading">回楼上，时代在进步嘛。</h4>
+						    <p class="list-group-item-text">——小周</p>
+						  </a>
+						  <a href="#" class="list-group-item list-group-item-info">
+						    <h4 class="list-group-item-heading">纸书好漂亮呀！</h4>
+						    <p class="list-group-item-text">——小陈</p>
+						  </a>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+		</div>
+		</div>	
+	</div>
+	<div class="container">	
+	</div>
+	<script src="lib/jquery/jquery-1.11.0.min.js"></script>	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/mine.js"></script></body>

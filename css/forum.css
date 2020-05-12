@@ -1,0 +1,51 @@
+.jumbotron{
+	padding: 20px;
+}
+.forum-tab{
+	margin-top: -20px;
+	min-height: 250px;
+	border: 1px solid #eeeeee;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+.forum-tab ul{
+	margin: 15px 15px;
+}
+.tab-content{
+	margin: 15px 15px;
+	text-align: center;
+}
+.list-group{
+	text-align: left;
+	font-family: "幼圆";
+}
+.list-group p{
+	text-align: right;
+}
+.input-group{
+	width:92%;
+	margin: 10px auto;
+}
+.input-group input{
+	margin-top: 10px;
+}
+.comment{
+	height: 100px;
+	
+}
+.top-box{
+	border: 2px solid #f5f5f5;
+	border-radius: 5px;
+	margin: 10px 16px;
+}
+.top-box button{
+	float: right;
+	margin-top: 10px;
+}
+.top-box font{
+	margin-left:20px;
+	/* display:inline-block; */
+	height:40px;
+}
+
+

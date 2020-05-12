@@ -1,0 +1,164 @@
+.enter-box{
+	margin-top: 20px;
+	height: 300px;
+	width: 400px;
+	/* border-top: none; */
+	padding:0;
+	border-radius:10px;
+	background-color:;
+	
+	padding-top:10px;
+	text-align: center;
+}
+
+.nav-tabs li{
+	width:200px;
+	text-align: center;
+	
+}
+.nav-tabs li a{
+	color: white;
+	background-color: #007BFF;
+}
+
+.tab-content{
+	background-color:white;
+	overflow: hidden;
+	height: 230px;
+	width:398px;
+	padding: 20px 50px;
+	border-radius:0 0 5px 5px;
+	border-bottom: none;
+	border: 1px solid #dddddd;
+}
+.input{
+	margin-top:20px;
+}
+.input-group{
+	width: 300px;
+	
+}
+.button-left,.button-right{
+	width: 99px;
+	background-color:rgba(0,123,255,0.6);
+}
+.button-left:hover,.button-right:hover{
+	background-color:rgba(0,123,255,1);
+}
+.button-left:focus,.button-right:focus{
+	background-color:rgba(0,123,255,1);
+}
+.button-left{
+	margin-top: 30px;
+	margin-left:0px;
+}
+.button-right{
+	margin-top:30px;
+	margin-left:94px;
+}
+.banner{
+	background-image: linear-gradient(-90deg, #29bdd9 0%, #276ace 100%);
+	height:500px;
+	padding: 0;
+	margin-top:-80px;
+}
+.search-box{
+	order: 1;
+	height:75px;
+	background-color: #f5f5f5;
+}
+.search{
+	margin:10px auto;
+	min-width:550px;
+	height:55px;
+	order: 2;
+	flex: 1;
+}
+.search button{
+	height: 55px;
+	border-radius: 15px;
+	border:2px solid #2C3E50;
+}
+
+.search button:last-child{
+	border-left: none;
+	width:50px;
+}
+
+.search input{
+	height: 55px;
+	/* background-image: linear-gradient(-90deg, white 1%, #29bdd9 100%); */
+	opacity: 0.7;
+	color: white;
+	border: 2px solid #2C3E50;
+	border-left: none;
+	border-right: none;
+}
+.banner-font{
+	color: white;
+	font-size:5.5625rem;
+	font-family: "黑体";
+	display: inline-block;
+	opacity: 0.8;
+	margin-top: 150px;
+	margin-left: 60px;
+	max-height: 160px;
+}
+.mininav{
+	order: 2;
+	margin: 0;
+	padding: 0;
+	height: 75px;
+	line-height: 60px;
+	order: 1;
+	flex: 1;
+	display: block;
+	overflow: hidden;
+	clear: both;
+	font-size: 22px;
+}
+.flex-box{
+	display:flex;
+	flex: 1;
+	flex-flow: row;
+}
+
+@media all and (max-width:750px){
+	.flex-box{
+		flex-flow: column;
+	}
+	.search{
+		order:1;
+	}
+	.mininav{
+		order: 2;
+		text-align: center;
+	}
+
+}
+.panel img{
+	width: 210px;
+	height: 324px;
+}
+.panel-heading{
+	height:52px;	
+}
+.panel-title{
+	font:24px "微软雅黑";
+	
+}
+.panel{
+	margin-top: 20px;
+}
+/* .carousel{
+	height: 450px;
+} */
+.carousel img{
+	max-width:inherit;
+}
+.list-group{
+	text-align:center;
+}
+.bg{
+	 background-color: #337ab7;
+}
